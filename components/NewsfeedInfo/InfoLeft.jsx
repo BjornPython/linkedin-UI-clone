@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from "./infoLeft.module.css"
-
+import LeftProfile from './LeftProfile'
 
 
 function InfoLeft() {
 
     return (
         <div className={styles.infoLeftContainer}>
-            <h1>infoleft</h1>
+            <LeftProfile styles={styles} />
         </div>
     )
 }

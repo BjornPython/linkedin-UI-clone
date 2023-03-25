@@ -1,10 +1,22 @@
 .infoLeftContainer {
     width: 225px;
     height: 600px;
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
-    border-radius: 0.8rem;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftProfileContainer {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+}
+
+.userBanner {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
 }

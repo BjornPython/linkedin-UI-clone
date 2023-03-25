@@ -1,0 +1,28 @@
+.infoRightContainer {
+    width: 300px;
+    height: 600px;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+}
+
+.addToFeed {
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.addFeed {
+    width: 90%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    margin-top: 20px;
+
+}

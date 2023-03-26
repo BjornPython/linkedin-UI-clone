@@ -9,7 +9,7 @@ function InfoRight({ scrollVal }) {
                 <p className={styles.addFeed}>Add to your feed</p>
                 <UserSuggestions />
             </div>
-            <Advertisement />
+            <Advertisement scrollVal={scrollVal} />
         </div>
     )
 }

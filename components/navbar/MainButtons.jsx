@@ -14,40 +14,40 @@ function MainButtons() {
 
     return (
         <div className="main-btns">
-            <Link href={"/about"}>
+            <Link href={"/"}>
                 <div className="nav-btn">
                     <Home className="nav-btn-icn" />
                     <p>Home</p>
                 </div>
             </Link>
-            <Link href={"/about"}>
+            <Link href={"/network"}>
                 <div className="nav-btn">
                     <Network className="nav-btn-icn" />
                     <p>My Network</p>
                 </div>
             </Link>
 
-            <Link href={"/about"}>
+            <Link href={"/jobs"}>
                 <div className="nav-btn">
                     <Jobs className="nav-btn-icn" />
                     <p>Jobs</p>
                 </div>
             </Link>
 
-            <Link href={"/about"}>
+            <Link href={"/messages"}>
                 <div className="nav-btn">
                     <Msg className="nav-btn-icn" />
                     <p>Messaging</p>
                 </div>
             </Link>
 
-            <Link href={"/about"}>
+            <Link href={"/notifications"}>
                 <div className="nav-btn">
                     <Notif className="nav-btn-icn" />
                     <p>Notifications</p>
                 </div>
             </Link>
-            <Link href={"/about"}>
+            <Link href={"/profile"}>
                 <div className="nav-btn" style={{ borderRight: "1px solid rgba(0, 0, 0, 0.1)" }}>
                     <Circle className="nav-btn-icn" style={{ width: "24px", marginBottom: "2px" }} />
                     <p>Me</p>

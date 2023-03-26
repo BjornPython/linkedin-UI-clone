@@ -5,29 +5,39 @@ import PostActions from "./PostActions"
 import "./posts.css"
 import background from "../../public/images/background.jpg"
 import { useState, useEffect } from "react"
-const getPostInfo = async () => {
 
+
+const getPostInfo = async (postId) => {
+    try {
+        console.log("FETCHING POSTID: ", postId);
+        const res = await fetch(`http://localhost:8000/posts/post/${postId}`, { cache: "no-cache" })
+        const data = res.json()
+        return data
+    } catch (err) { throw err }
 }
 
 
 function Post({ postId }) {
 
-    const [postInfo, setPostInfo] = useState(null)
-
+    const [postInfo, setPostInfo] = useState({ caption: "", userId: "", imageURL: "" })
+    const { caption, userId, imageURL } = postInfo
     useEffect(() => {
         const info = async () => {
-            const res = getPostInfo(postId)
-            setPostInfo(res)
+            const info = await getPostInfo(postId)
+            console.log("INFO: ", info);
+            setPostInfo(info.postInfo)
         }
+        info()
     }, [])
 
-    // const { postUserId, postImg, caption } = postInfo
+
+
     const content = "Sample content, caption lorem ipsum duh yeah bro hahaha wt am i ven saying. "
     return (
         <div className="post-container">
-            <PostUser />
+            <PostUser imageURL={imageURL} />
             <div className="post-caption">
-                <p>{content}</p>
+                <p>{caption}</p>
             </div>
             <Image src={background} className="post-img" alt="" />
             <PostActions />

@@ -213,6 +213,15 @@
     align-items: center;
     position: absolute;
     bottom: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+.followBtn:hover {
+    background-color: rgba(10, 102, 194, 0.2);
+    border-width: 2px;
+    transition: all 0.1s ease-in-out;
 }
 
 .followBtn  p {

@@ -15,7 +15,7 @@ function Posts({ postIds }) {
     return (
         <>
             <InfoLeft scrollVal={scrollVal} />
-            <div className="posts-container">
+            <div >
                 {postIds.map(postId => {
                     return <Post key={postId} postId={postId} />
                 })}

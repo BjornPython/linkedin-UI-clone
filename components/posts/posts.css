@@ -96,3 +96,21 @@
     font-size: 12px;
     color: rgba(0, 0, 0, 0.6);
 }
+
+@media (max-width: 1200px) {
+    .post-container {
+        width: 387px;
+    }
+}
+
+@media (max-width: 990px) {
+    .post-container {
+        width: 470px !important;
+    }
+}
+
+@media (max-width: 770px) {
+    .post-container {
+        width: 100% !important;
+    }
+}

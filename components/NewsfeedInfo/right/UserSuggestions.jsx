@@ -8,8 +8,8 @@ function UserSuggestions() {
             <div className="user-suggestion">
                 <Circle className="user-sg-icn" />
                 <div className="user-name-bio-follow">
-                    <p className="name-sg">Francis Kong</p>
-                    <p className="bio-sg">President of chuchu</p>
+                    <p className="name-sg">Kevin Careng</p>
+                    <p className="bio-sg">President of Level inc.</p>
                     <button className="follow-btn">+ Follow</button>
                 </div>
             </div>
@@ -17,8 +17,8 @@ function UserSuggestions() {
             <div className="user-suggestion">
                 <Circle className="user-sg-icn" />
                 <div className="user-name-bio-follow">
-                    <p className="name-sg">Francis Kong</p>
-                    <p className="bio-sg">President of chuchu</p>
+                    <p className="name-sg">Rob Sebastian</p>
+                    <p className="bio-sg">Civil Engineer</p>
                     <button className="follow-btn">+ Follow</button>
                 </div>
             </div>
@@ -26,8 +26,8 @@ function UserSuggestions() {
             <div className="user-suggestion">
                 <Circle className="user-sg-icn" />
                 <div className="user-name-bio-follow">
-                    <p className="name-sg">Francis Kong</p>
-                    <p className="bio-sg">President of chuchu</p>
+                    <p className="name-sg">Samantha Kurt</p>
+                    <p className="bio-sg">Chief Engineer</p>
                     <button className="follow-btn">+ Follow</button>
                 </div>
             </div>

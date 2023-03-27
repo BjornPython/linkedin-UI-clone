@@ -9,6 +9,10 @@
 .networkContents {
     margin-top: 20px;
     width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 25px;
 }
 
 .leftBanner {
@@ -16,11 +20,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 300px;
-    height: 600px;
+    min-width: 300px;
+    height: auto;
     background-color: white;
     border-radius: 0.8rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
 }
 
 .leftBanner p {
@@ -44,4 +49,86 @@
     justify-content: flex-start;
     align-items: center;
     column-gap: 15px;
+}
+
+.growNetwork {
+    color: #0a66c2;
+    width: 100% !important;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.adContainer {
+    width: 100%;
+    padding-top: 15px ;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.adImage {
+    width: 100%;
+}
+
+.siteInfos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    row-gap: 10px;
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.block p {
+    margin: 0 !important;      
+    font-size: 12px;
+    width: auto;
+}
+
+
+.contentContainer {
+    width: 100%;
+}
+
+.contentOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.contentOne p {
+    margin: 20px 15px;
+}
+
+.contentOne p:nth-child(1) {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contentOne p:nth-child(2) {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.suggestionsContainer {
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 400px;
+    border-radius: 0.8rem;
+}
+
+.suggestionsContainer p {
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.7);
 }

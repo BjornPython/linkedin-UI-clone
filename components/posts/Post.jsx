@@ -4,6 +4,7 @@ import Image from "next/image"
 import PostActions from "./PostActions"
 import "./posts.css"
 import background from "../../public/images/background.jpg"
+import samplePost from "../../public/images/samplePost.png"
 import { useState, useEffect } from "react"
 
 
@@ -39,7 +40,7 @@ function Post({ postId }) {
             <div className="post-caption">
                 <p>{caption}</p>
             </div>
-            <Image src={background} className="post-img" alt="" />
+            <Image src={samplePost} className="post-img" alt="" />
             <PostActions />
         </div>
     )

@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import Circle from "../../public/svgs/circle.svg"
 function PostUser({ imageURL }) {
-    console.log("IMAGE URL: ", imageURL);
     return (
         <div className='post-user-container'>
             {imageURL

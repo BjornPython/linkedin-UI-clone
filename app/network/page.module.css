@@ -136,11 +136,12 @@
 
 .suggestionsContainer p {
     margin-left: 15px;
+    align-self: flex-start;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .allSuggestions {
-    width: 96%;
+    width: 95%;
     height: auto;
     margin-bottom: 20px;
     grid-template-columns: repeat(3,minmax(0,1fr));
@@ -154,11 +155,69 @@
     height: 250px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .suggestionDiv:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
     0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.suggestionBanner {
+    width: 100%;
+    height: 62px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background-size: cover;
+}
+
+.suggestionInfo {
+    position: relative;
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sgUserIcn {
+    width: 72px;
+    height: 72px;
+    background-size: cover;
+    margin-top: -50px;
+    fill: gray;
+}
+
+.suggestionInfo p {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.suggestionInfo p:nth-child(3) {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+.followBtn {
+    height: 32px;
+    width: 100%;
+    border-radius: 0.8rem;
+    border: 1px solid #0a66c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+}
+
+.followBtn  p {
+    color:#0a66c2;
+    margin: 0;
 }
 
 

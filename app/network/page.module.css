@@ -1,7 +1,7 @@
 .networkPage {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: flex;  
     justify-content: center;
     align-items: flex-start;
 }
@@ -10,8 +10,8 @@
     margin-top: 20px;
     width: 75%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: space-between;
     column-gap: 25px;
 }
 
@@ -95,7 +95,8 @@
 
 
 .contentContainer {
-    width: 100%;
+    width: auto;
+
 }
 
 .contentOne {
@@ -106,6 +107,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.8rem;
     margin-bottom: 15px;
+    width: 805px;
 }
 
 .contentOne p {
@@ -121,14 +123,81 @@
 }
 
 .suggestionsContainer {
-    width: 100%;
+    width: 805px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    height: 400px;
+    height: auto    ;
     border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .suggestionsContainer p {
     margin-left: 15px;
     color: rgba(0, 0, 0, 0.7);
+}
+
+.allSuggestions {
+    width: 96%;
+    height: auto;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    display: grid;
+    gap: 1.2rem;
+    list-style-type: none;
+}
+
+.suggestionDiv {
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+}
+
+.suggestionDiv:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+
+@media (max-width: 1300px) {
+    .networkContents {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .networkContents {
+        width: 95%;
+        justify-content: center;
+    }
+    .contentOne {
+        width: 635px;
+    }
+
+    .suggestionsContainer {
+        width: 635px;
+    }
+
+    .allSuggestions {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media (max-width: 1030px) {
+
+
+    .contentOne {
+        width: 395px;
+    }
+
+    .suggestionsContainer {
+        width: 395px;
+    }
+
+    .allSuggestions {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
 }

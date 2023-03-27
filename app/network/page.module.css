@@ -41,14 +41,23 @@
 }
 
 .networkInfo {
-    margin-bottom: 15px;
-    margin-left: 15px;
-    width: 90%;
+    width: 100%;
     color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 15px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.networkInfo:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    margin-left: 15px;
+    fill: rgba(0, 0, 0, 0.6);
 }
 
 .growNetwork {

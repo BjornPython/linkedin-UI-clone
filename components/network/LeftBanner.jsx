@@ -12,35 +12,35 @@ function LeftBanner({ styles }) {
         <div className={styles.leftBanner}>
             <p>Manage my Network</p>
             <div className={styles.networkInfo}>
-                <Network />
+                <Network className={styles.icon} />
                 <p>Connections</p>
             </div>
             <div className={styles.networkInfo}>
-                <Contacts />
+                <Contacts className={styles.icon} />
                 <p>Contacts</p>
             </div>
             <div className={styles.networkInfo}>
-                <Following />
+                <Following className={styles.icon} />
                 <p>Following & followers</p>
             </div>
             <div className={styles.networkInfo}>
-                <Network />
+                <Network className={styles.icon} />
                 <p>Groups</p>
             </div>
             <div className={styles.networkInfo}>
-                <Events />
+                <Events className={styles.icon} />
                 <p>Events</p>
             </div>
             <div className={styles.networkInfo}>
-                <Pages />
+                <Pages className={styles.icon} />
                 <p>Pages</p>
             </div>
             <div className={styles.networkInfo}>
-                <Newsletter />
+                <Newsletter className={styles.icon} />
                 <p>Newsletter</p>
             </div>
             <div className={styles.networkInfo}>
-                <Hashtag />
+                <Hashtag className={styles.icon} />
                 <p>Hashtags</p>
             </div>
             <LeftAd styles={styles} />

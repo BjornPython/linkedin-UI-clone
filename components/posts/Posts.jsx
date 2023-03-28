@@ -19,11 +19,7 @@ function Posts({ postIds }) {
                 {postIds.map(postId => {
                     return <Post key={postId} postId={postId} />
                 })}
-                {/* <Post />
-                <Post />
-                <Post />
-                <Post />
-                <Post /> */}
+
             </div>
             <InfoRight scrollVal={scrollVal} />
         </>

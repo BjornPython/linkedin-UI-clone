@@ -17,30 +17,47 @@ const getPostInfo = async (postId) => {
     } catch (err) { throw err }
 }
 
+const getUserInfo = async (uid) => {
+    try {
+        console.log("FETCHING INFO");
+        const res = await fetch(`http://localhost:8000/users/${uid}`, { cache: "no-cache" })
+        const data = await res.json()
+        return data.user
+    } catch (err) { throw err }
+}
 
 function Post({ postId }) {
 
     const [postInfo, setPostInfo] = useState({ caption: "", userId: "", imageURL: "" })
     const { caption, userId, imageURL } = postInfo
+    const [userInfo, setUserInfo] = useState({ name: "", bio: "", dpURL: null, bannerURL: "" })
+    const { name, bio, dpURL } = userInfo
     useEffect(() => {
         const info = async () => {
             const info = await getPostInfo(postId)
-            console.log("INFO: ", info);
             setPostInfo(info.postInfo)
         }
         info()
     }, [])
 
+    useEffect(() => {
+        if (userId === "") { return }
+        const callGetUserInfo = async () => {
+            const info = await getUserInfo(userId)
+            setUserInfo(info)
+
+        }
+        callGetUserInfo()
+    }, [userId])
 
 
-    const content = "Sample content, caption lorem ipsum duh yeah bro hahaha wt am i ven saying. "
     return (
         <div className="post-container">
-            <PostUser imageURL={imageURL} />
+            <PostUser name={name} bio={bio} dpURL={dpURL} />
             <div className="post-caption">
                 <p>{caption}</p>
             </div>
-            <Image src={samplePost} className="post-img" alt="" />
+            <img src={imageURL} className="post-img" alt="" />
             <PostActions />
         </div>
     )

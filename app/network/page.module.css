@@ -33,11 +33,11 @@
     margin: 0;
 }
 
-.leftBanner p:nth-child(1) {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    color: rgba(0, 0, 0, 0.8);
+.mngNetwork {
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+    margin-left: 15px !important;
+    color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .networkInfo {
@@ -100,8 +100,14 @@
     margin: 0 !important;      
     font-size: 12px;
     width: auto;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
+.block p:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
 
 .contentContainer {
     width: auto;
@@ -195,7 +201,8 @@
 .sgUserIcn {
     width: 72px;
     height: 72px;
-    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
     margin-top: -50px;
     fill: gray;
 }

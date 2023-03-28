@@ -5,11 +5,11 @@ function MainContents({ styles }) {
         <div className={styles.contentContainer}>
             <div className={styles.contentOne}>
                 <p>No Pending Invitations</p>
-                <p>Manage</p>
+                <p style={{ cursor: "pointer" }}>Manage</p>
             </div>
             <div className={styles.contentOne}>
                 <p>Celebrations</p>
-                <p>See all</p>
+                <p style={{ cursor: "pointer" }}>See all</p>
             </div>
             <Suggestions styles={styles} />
         </div>

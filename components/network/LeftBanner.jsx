@@ -10,7 +10,7 @@ import LeftAd from "./LeftAd"
 function LeftBanner({ styles }) {
     return (
         <div className={styles.leftBanner}>
-            <p>Manage my Network</p>
+            <p className={styles.mngNetwork}>Manage my Network</p>
             <div className={styles.networkInfo}>
                 <Network className={styles.icon} />
                 <p>Connections</p>

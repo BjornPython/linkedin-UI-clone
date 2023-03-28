@@ -13,6 +13,8 @@ const getPosts = async () => {
 export default async function Home() {
   const posts = await getPosts()
   const { postIds } = posts
+
+
   return (
     <div className={styles.homepage}>
       <div className={styles.newsfeed}>

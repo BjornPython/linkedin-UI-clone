@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .nav-btn:hover {
@@ -93,4 +94,29 @@
 .search-input-icn {
     fill: rgba(0, 0, 0, 0.6);
     cursor: pointer;
+}
+
+.nav-target-icn {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-active {
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+}
+
+.network-active {
+    transform: rotateY(3.142rad);
+    fill: black;
+}
+
+.active-notifs {
+    transform: rotate(15deg);
+    fill: black;
+    transition: all 0.1s ease-in-out;
 }

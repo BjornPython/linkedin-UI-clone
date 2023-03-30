@@ -70,6 +70,7 @@
 }
 
 .post-caption {
+    margin: 15px 0 10px 0;
     width: 90%;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.9);

@@ -1,0 +1,196 @@
+.jobPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jobContents {
+    width: 75%;
+    height: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leftBanner {
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    row-gap: 20px;
+    padding: 22px 0;
+    position: sticky;
+    top: 80px;
+}
+
+.leftBannerContent {
+    cursor: pointer;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftBannerContent p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
+.leftBannerIcon {
+    width: 24px;
+    height: 24px;
+    fill: rgba(0, 0, 0, 0.6);
+}
+
+.mainContent {
+    width: 555px;
+    height: auto;
+}
+
+.recent {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.recentContents {
+    width: 90%; 
+}
+
+.jobSearches  {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobSearches p:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.jobSearches p:nth-child(2) {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.jobs {
+    cursor: pointer;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}   
+
+.jobs p:nth-child(1) {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.jobs p:nth-child(2) {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.rightBanner {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rightBannerInfo {
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.infoContent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px 0 10px 0;
+}
+
+.seekerGuide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.seekerGuide p:nth-child(2) {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.improveRes {
+    margin-top: 10px;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.improveRes p {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.img {
+    width: 80px;
+    height: auto;
+    border-radius: 0.8rem;
+    margin-left: 5px;
+}
+
+.explore {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.showMore {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    color: rgba(131, 68, 204, 0.7);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.showMore:hover {
+    text-decoration: underline;
+}

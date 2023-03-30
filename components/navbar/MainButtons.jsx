@@ -19,8 +19,8 @@ const defaultState = { home: false, network: false, jobs: false, messaging: fals
 
 function MainButtons() {
 
-    const [currentPage, setCurrentPage] = useState("home")
-
+    const [currentPage, setCurrentPage] = useState(window.location.href.split("/")[3])
+    console.log("HREF: ", window.location.href.split("/")[3]);
     // WIll use for cleaner code
     const [valHelpers, setValHelpers] = useState(defaultState)
     const { home, network, jobs, messaging, notifications, me, work } = valHelpers

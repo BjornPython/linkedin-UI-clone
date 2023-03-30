@@ -10,7 +10,6 @@ import { useState, useEffect } from "react"
 
 const getPostInfo = async (postId) => {
     try {
-        console.log("FETCHING POSTID: ", postId);
         const res = await fetch(`http://localhost:8000/posts/post/${postId}`, { cache: "no-cache" })
         const data = res.json()
         return data
@@ -19,7 +18,6 @@ const getPostInfo = async (postId) => {
 
 const getUserInfo = async (uid) => {
     try {
-        console.log("FETCHING INFO");
         const res = await fetch(`http://localhost:8000/users/${uid}`, { cache: "no-cache" })
         const data = await res.json()
         return data.user

@@ -7,7 +7,7 @@
 }
 
 .networkContents {
-    margin-top: 20px;
+    margin-top: 25px;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -247,6 +247,68 @@
 }
 
 
+/* LOADING PAGE */
+
+.loadingPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.loadingContents {
+    width: 75%;
+    height: 100%;
+    margin-top: 50px;
+    column-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: inline-block;
+    width: 80%;
+    background-color: whitesmoke;
+    height: 30px;
+    border-radius: 0.8rem;
+    background: linear-gradient(-45deg, white, whitesmoke, whitesmoke, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+	background-size: 400% 400%;
+	animation: gradient 2s ease infinite;
+}
+
+.left {
+    padding-top: 30px;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 20px;
+}
+
+.right {
+    width: 100%;
+    height: 500px;
+}
+
+.item {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 1300px) {
     .networkContents {
         width: 90%;
@@ -313,3 +375,15 @@
         height: auto;
     }
 } 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

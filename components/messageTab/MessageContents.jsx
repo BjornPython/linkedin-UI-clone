@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react"
+import Focused from "./Focused"
+
 
 function MessageContents() {
 
@@ -20,6 +22,9 @@ function MessageContents() {
                     <span></span>
                 </div>
             </div>
+
+            {page === "focused" && <Focused />}
+
 
         </div>
     )

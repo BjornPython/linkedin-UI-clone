@@ -155,7 +155,7 @@
 
 .message-pages-container {
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,4 +197,58 @@
 .active-btn span {
     opacity: 1 !important;
     transition: 0.3s ease-in-out;
+}
+
+.focused-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.chat-container {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chat-container:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chat-dp {
+    margin-left: 10px;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat-texts {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.chat-texts p:nth-child(1) {
+    font-size: 14px;
+    width: 167px;
+    text-overflow: ellipsis;
+}
+
+.chat-texts p:nth-child(2) {
+    width: 167px;
+    height: 28px;
+    font-size: 12px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.5);
+    text-overflow: ellipsis;
 }

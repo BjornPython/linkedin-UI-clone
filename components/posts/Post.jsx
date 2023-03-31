@@ -18,7 +18,7 @@ const getPostInfo = async (postId) => {
 
 const getUserInfo = async (uid) => {
     try {
-        const res = await fetch(`http://localhost:8000/users/${uid}`, { cache: "no-cache" })
+        const res = await fetch(`http://localhost:8000/users/ids/${uid}`, { cache: "no-cache" })
         const data = await res.json()
         return data.user
     } catch (err) { throw err }

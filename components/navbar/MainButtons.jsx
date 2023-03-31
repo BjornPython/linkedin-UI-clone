@@ -15,15 +15,14 @@ import ActiveMessage from "../../public/svgs/message-active.svg"
 
 
 
-const defaultState = { home: false, network: false, jobs: false, messaging: false, notifications: false, me: false, work: false }
+const defaultState = { home: false, network: false, jobs: false, messages: false, notifications: false }
 
 function MainButtons() {
-
-    const [currentPage, setCurrentPage] = useState(window.location.href.split("/")[3])
-    console.log("HREF: ", window.location.href.split("/")[3]);
+    const page = window.location.href.split("/")[3]
+    const [currentPage, setCurrentPage] = useState(page ? page : "home")
     // WIll use for cleaner code
     const [valHelpers, setValHelpers] = useState(defaultState)
-    const { home, network, jobs, messaging, notifications, me, work } = valHelpers
+    const { home, network, jobs, messaging, notifications } = valHelpers
 
     useEffect(() => {
         setValHelpers({ ...defaultState, [currentPage]: true })
@@ -72,7 +71,7 @@ function MainButtons() {
                 </div>
             </Link>
 
-            <Link href={"/profile"} onClick={() => { setCurrentPage("me") }}>
+            <Link href={`/${currentPage}`}>
                 <div className="nav-btn" style={{ borderRight: "1px solid rgba(0, 0, 0, 0.1)" }}>
                     <Circle className="nav-btn-icn" style={{ width: "24px", marginBottom: "2px" }} />
                     <p>Me</p>
@@ -80,7 +79,7 @@ function MainButtons() {
                 </div>
             </Link>
 
-            <Link href={"/about"} onClick={() => { setCurrentPage("work") }}>
+            <Link href={`/${currentPage}`}>
                 <div className="nav-btn">
                     <Dots className="nav-btn-icn" />
                     <p>Work</p>

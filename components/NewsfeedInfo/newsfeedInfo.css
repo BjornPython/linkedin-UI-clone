@@ -125,6 +125,7 @@
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
     padding-top: 10px;
 }
 

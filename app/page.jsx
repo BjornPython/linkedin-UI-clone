@@ -1,8 +1,6 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import Posts from '@/components/posts/Posts'
-import Post from '@/components/posts/Post'
-import { use } from 'react'
+
 const getPosts = async () => {
   const res = await fetch(`http://localhost:8000/posts`, { cache: "no-cache" })
   if (!res.ok) { throw new Error("failed to get data") }

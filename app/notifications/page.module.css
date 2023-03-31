@@ -1,0 +1,88 @@
+.notifsPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifsContents {
+    margin-top: 20px;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.notifsContainer {
+    overflow: hidden;
+    width: 555px;
+    height: auto;
+    border-radius: 0.8rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.notificationContainer {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 15px;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.notificationContainer:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.notifImage {
+    margin-left: 15px;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.notifInfo {
+    width: 411px;
+}
+
+.notifInfo p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.settingsIcon {
+    transform: scale(1.5);
+    fill: rgba(0, 0, 0, 0.6);
+}
+
+.icnContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingsContainer {
+    width: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.settingsContainer p {
+    font-size: 12px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}

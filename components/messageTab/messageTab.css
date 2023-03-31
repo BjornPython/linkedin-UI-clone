@@ -86,7 +86,7 @@
     position: relative;
 }
 
-.search-container {
+.search-container-2 {
     width: 265px;
     margin-top: 0px 0px;
     height: 34px;
@@ -99,11 +99,11 @@
 
 }
 
-.search-container:hover {
+.search-container-2:hover {
     border: 3px solid rgba(0, 0, 0, 0.5);
 }
 
-.search-container:focus-within {
+.search-container-2:focus-within {
     border: 3px solid rgba(0, 0, 0, 0.9);
 
 }

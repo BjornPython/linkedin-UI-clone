@@ -1,0 +1,61 @@
+.messagePage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageContent {
+    margin-top: 20px;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.messageAd {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.chatsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 313px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.messageHeader {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.messageHeader p {
+    margin-left: 15px;
+}
+
+
+.chatIcons {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.chatIcon {
+    transform: scale(1.4);
+}

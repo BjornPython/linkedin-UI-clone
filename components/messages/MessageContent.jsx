@@ -1,8 +1,19 @@
 import React from 'react'
-
-function MessageContent() {
+import MessageAd from './MessageAd'
+import Chats from './Chats'
+function MessageContent({ styles }) {
     return (
-        <div>MessageContent</div>
+        <div className={styles.messageContent}>
+
+            <div className={styles.messageContainer}>
+                <Chats styles={styles} />
+            </div>
+
+            <div className={styles.messageAd}>
+                <MessageAd />
+            </div>
+
+        </div>
     )
 }
 

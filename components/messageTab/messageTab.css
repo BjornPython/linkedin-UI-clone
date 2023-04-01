@@ -67,6 +67,7 @@
     justify-content: center;
     align-items: center;
     fill: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
 .msg-tab-icn:hover {
@@ -87,7 +88,7 @@
 }
 
 .search-container-2 {
-    width: 265px;
+    width: 95%;
     margin-top: 0px 0px;
     height: 34px;
     display: flex;

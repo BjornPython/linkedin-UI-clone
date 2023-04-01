@@ -12,7 +12,6 @@ const getMessages = async () => {
 function Focused() {
 
     const [chats, setChats] = useState([])
-
     useEffect(() => {
         const callGetMessages = async () => {
             const data = await getMessages()
@@ -23,7 +22,7 @@ function Focused() {
 
 
     return (
-        <div className='focused-container'>
+        <div className='focused-container' >
             {chats.map(chat => {
                 return <Chat key={chat[0]} info={chat[1]} />
             })}

@@ -4,12 +4,12 @@ import { useState } from "react"
 import Focused from "./Focused"
 
 
-function MessageContents() {
+function MessageContents({ height }) {
 
     const [page, setPage] = useState("focused")
-
+    const heightStyle = height ? { height } : {}
     return (
-        <div className="message-contents">
+        <div className="message-contents" style={heightStyle}>
             <div className="message-pages-container" >
                 <div className={`msg-page-btn-cter ${page === "focused" && "active-btn"}`}
                     onClick={() => { setPage("focused") }}>
@@ -23,7 +23,7 @@ function MessageContents() {
                 </div>
             </div>
 
-            {page === "focused" && <Focused />}
+            {page === "focused" && <Focused height={height} />}
 
 
         </div>

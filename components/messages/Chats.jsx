@@ -19,7 +19,7 @@ function Chats({ styles }) {
                 </div>
             </div>
             <MessageSearch />
-            <MessageContents />
+            <MessageContents height={"590px"} />
         </div>
     )
 }

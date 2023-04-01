@@ -122,3 +122,32 @@
     fill: black;
     transition: all 0.1s ease-in-out;
 }
+
+.hide-search {
+    display: none;
+}
+
+
+@media (max-width: 1300px) {
+    .nav-contents {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .input-container {
+        display: none;
+    }
+
+    .hide-search {
+        display: flex;
+    }
+
+    .search-container {
+        width: auto;
+    }
+    .nav-contents {
+        justify-content: flex-start;
+    }
+} 

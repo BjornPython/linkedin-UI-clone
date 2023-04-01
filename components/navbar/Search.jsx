@@ -14,6 +14,11 @@ function Search() {
                 <input type="text" placeholder='Search' />
             </div>
 
+            <div className="nav-btn hide-search">
+                <SearchIcon className="nav-btn-icn" />
+                <p>Search</p>
+            </div>
+
         </div>
     )
 }

@@ -13,3 +13,7 @@ a {
 p {
   margin: 0;
 }
+
+textarea:focus {
+  outline: none;
+}

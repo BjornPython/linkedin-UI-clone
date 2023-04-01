@@ -10,10 +10,10 @@ function Chats({ styles }) {
             <div className={styles.messageHeader}>
                 <p>Messaging</p>
                 <div className={styles.chatIcons}>
-                    <div className="msg-tab-icn">
+                    <div className={styles.chatHeaderIcn}>
                         <Dots className={styles.chatIcon} />
                     </div>
-                    <div className="msg-tab-icn">
+                    <div className={styles.chatHeaderIcn}>
                         <New className={styles.chatIcon} />
                     </div>
                 </div>

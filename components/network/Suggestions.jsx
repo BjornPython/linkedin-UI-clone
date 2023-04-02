@@ -3,7 +3,7 @@ import Suggestion from './Suggestion'
 
 const getUsers = async () => {
     try {
-        const res = await fetch("http://localhost:8000/users", { cache: "no-cache" })
+        const res = await fetch(`${process.env.API_ENDPOINT}/users`, { cache: "no-cache" })
         const data = await res.json()
         return data
     } catch (err) { throw err }

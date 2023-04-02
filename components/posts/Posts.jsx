@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react'
 import Post from './Post'
 import InfoLeft from '../NewsfeedInfo/left/InfoLeft'
 import InfoRight from '../NewsfeedInfo/right/InfoRight'
-function Posts({ postIds }) {
+function Posts({ ENDPOINT, postIds }) {
+
+
     const [scrollVal, setSCrollVal] = useState(0)
 
     useEffect(() => {
@@ -17,11 +19,11 @@ function Posts({ postIds }) {
             <InfoLeft scrollVal={scrollVal} />
             <div >
                 {postIds.map(postId => {
-                    return <Post key={postId} postId={postId} />
+                    return <Post key={postId} postId={postId} ENDPOINT={ENDPOINT} />
                 })}
 
             </div>
-            <InfoRight scrollVal={scrollVal} />
+            <InfoRight scrollVal={scrollVal} ENDPOINT={ENDPOINT} />
         </>
     )
 }

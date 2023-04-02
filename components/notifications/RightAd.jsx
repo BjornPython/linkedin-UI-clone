@@ -6,7 +6,7 @@ function RightAd({ styles }) {
     return (
         <div className={styles.rightContainer}>
             <div className={styles.rightAd}>
-                <Image src={Ad} className={styles.rightAdImage} />
+                <Image src={Ad} className={styles.rightAdImage} alt="" />
                 <div className="site-infos">
                     <div className="block">
                         <p>About</p>

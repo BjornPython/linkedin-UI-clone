@@ -187,9 +187,13 @@
 }
 
 .user-sg-icn {
+    min-width: 48px;
     width: 48px;
+    height: 48px;
     fill: rgba(0, 0, 0, 0.3);
-    height: auto;
+    min-height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .user-name-bio-follow {

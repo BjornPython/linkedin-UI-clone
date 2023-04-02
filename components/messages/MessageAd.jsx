@@ -5,7 +5,7 @@ import ad from "../../public/images/ad.png"
 function MessageAd() {
     return (
         <>
-            <Image src={ad} className='ad-image' />
+            <Image src={ad} className='ad-image' alt="" />
             <div className="site-infos">
                 <div className="block">
                     <p>About</p>

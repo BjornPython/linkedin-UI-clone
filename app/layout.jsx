@@ -8,6 +8,7 @@ export const metadata = {
   description: 'Linked in UI clone built with React and NextJS created by Nathan Flores',
 }
 
+
 export default function RootLayout({ children }) {
   return (
     <>

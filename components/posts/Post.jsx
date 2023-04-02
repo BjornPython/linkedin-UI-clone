@@ -1,30 +1,29 @@
 "use client"
 import PostUser from "./PostUser"
-import Image from "next/image"
 import PostActions from "./PostActions"
 import "./posts.css"
-import background from "../../public/images/background.jpg"
-import samplePost from "../../public/images/samplePost.png"
+
 import { useState, useEffect } from "react"
 
 
-const getPostInfo = async (postId) => {
+const getPostInfo = async (ENDPOINT, postId) => {
     try {
-        const res = await fetch(`http://localhost:8000/posts/post/${postId}`, { cache: "no-cache" })
+        const res = await fetch(`${ENDPOINT}/posts/post/${postId}`, { cache: "no-cache" })
         const data = res.json()
         return data
     } catch (err) { throw err }
 }
 
-const getUserInfo = async (uid) => {
+const getUserInfo = async (ENDPOINT, uid) => {
     try {
-        const res = await fetch(`http://localhost:8000/users/ids/${uid}`, { cache: "no-cache" })
+        const res = await fetch(`${ENDPOINT}/users/ids/${uid}`, { cache: "no-cache" })
         const data = await res.json()
         return data.user
     } catch (err) { throw err }
 }
 
-function Post({ postId }) {
+function Post({ ENDPOINT, postId }) {
+
 
     const [postInfo, setPostInfo] = useState({ caption: "", userId: "", imageURL: "" })
     const { caption, userId, imageURL } = postInfo
@@ -32,7 +31,7 @@ function Post({ postId }) {
     const { name, bio, dpURL } = userInfo
     useEffect(() => {
         const info = async () => {
-            const info = await getPostInfo(postId)
+            const info = await getPostInfo(ENDPOINT, postId)
             setPostInfo(info.postInfo)
         }
         info()
@@ -41,7 +40,7 @@ function Post({ postId }) {
     useEffect(() => {
         if (userId === "") { return }
         const callGetUserInfo = async () => {
-            const info = await getUserInfo(userId)
+            const info = await getUserInfo(ENDPOINT, userId)
             setUserInfo(info)
 
         }

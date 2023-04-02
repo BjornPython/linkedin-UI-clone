@@ -11,7 +11,7 @@ function RightBannerInfo({ styles }) {
                 </div>
                 <div className={styles.improveRes}>
                     <p>I want to improve my resume</p>
-                    <Image src={resSample} className={styles.img}></Image>
+                    <Image src={resSample} className={styles.img} alt=""></Image>
                 </div>
                 <p className={styles.explore}>Explore our curated guide of expert-led courses, such as how to improve your resume and grow your network, to help you land your next opportunity.</p>
                 <p className={styles.showMore}>Show more</p>

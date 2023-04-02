@@ -4,7 +4,7 @@ import { useState } from "react"
 import Focused from "./Focused"
 
 
-function MessageContents({ height }) {
+function MessageContents({ ENDPOINT, height }) {
 
     const [page, setPage] = useState("focused")
     const heightStyle = height ? { height } : {}
@@ -23,7 +23,7 @@ function MessageContents({ height }) {
                 </div>
             </div>
 
-            {page === "focused" && <Focused height={height} />}
+            {page === "focused" && <Focused height={height} ENDPOINT={ENDPOINT} />}
 
 
         </div>

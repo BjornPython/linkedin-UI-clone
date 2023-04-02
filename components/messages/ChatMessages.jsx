@@ -59,7 +59,7 @@ function ChatMessages({ styles }) {
     return (
         <div className={styles.chatMessages}>
             <div className={styles.displayChatUser}>
-                <Image src={sampleChatDp} className={styles.chatDpSample} />
+                <Image src={sampleChatDp} className={styles.chatDpSample} alt="" />
                 <div className={styles.chatUserInfo}>
                     <p>Maximo Guzman</p>
                     <p>Senior Data Scientist at a Tech Startup</p>

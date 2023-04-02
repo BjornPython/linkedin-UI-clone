@@ -2,19 +2,19 @@
 
 import { useEffect, useState } from "react"
 import Chat from "./Chat"
-const getMessages = async () => {
-    const res = await fetch("http://localhost:8000/users/chatsample")
+const getMessages = async (ENDPOINT) => {
+    if (!ENDPOINT) { return [] }
+    const res = await fetch(`${ENDPOINT}/users/chatsample`)
     const data = await res.json()
-    console.log("RES: ", data);
     return data
 }
 
-function Focused() {
+function Focused({ ENDPOINT }) {
 
     const [chats, setChats] = useState([])
     useEffect(() => {
         const callGetMessages = async () => {
-            const data = await getMessages()
+            const data = await getMessages(ENDPOINT)
             setChats(data)
         }
         callGetMessages()

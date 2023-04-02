@@ -5,7 +5,9 @@ import "./messageTab.css"
 import MessageHeader from "./MessageHeader"
 import MessageSearch from "./MessageSearch"
 import MessageContents from "./MessageContents"
-function MessageTab() {
+
+
+function MessageTab({ ENDPOINT }) {
     const [expand, setExpand] = useState(false)
 
 
@@ -17,7 +19,7 @@ function MessageTab() {
         <div className={`message-tab ${expand && "show-message-tab"}`} >
             <MessageHeader expand={expand} changeExpand={changeExpand} />
             < MessageSearch />
-            <MessageContents />
+            <MessageContents ENDPOINT={ENDPOINT} />
         </div >
     )
 }

@@ -19,7 +19,7 @@ function Chats({ styles }) {
                 </div>
             </div>
             <MessageSearch />
-            <MessageContents height={"590px"} />
+            <MessageContents height={"590px"} ENDPOINT={process.env.API_ENDPOINT} />
         </div>
     )
 }

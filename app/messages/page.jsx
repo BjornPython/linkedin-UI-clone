@@ -4,8 +4,6 @@ import MessageContent from '@/components/messages/MessageContent'
 
 function page() {
 
-    console.log("ENDPOINT IN PAGE: ", process.env.API_ENDPOINT);
-
     return (
         <div className={styles.messagePage}>
             <MessageContent styles={styles} ENDPOINT={process.env.API_ENDPOINT} />

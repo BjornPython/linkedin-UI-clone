@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           <Suspense fallback={<Loading />}>
             {children}
           </Suspense>
-          <MessageTab />
+          <MessageTab ENDPOINT={process.env.API_ENDPOINT} />
         </body>
       </html>
     </>

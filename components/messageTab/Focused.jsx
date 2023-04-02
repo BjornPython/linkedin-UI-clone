@@ -6,6 +6,7 @@ const getMessages = async (ENDPOINT) => {
     if (!ENDPOINT) { return [] }
     const res = await fetch(`${ENDPOINT}/users/chatsample`)
     const data = await res.json()
+    console.log("DATA: ", data);
     return data
 }
 
@@ -13,12 +14,13 @@ function Focused({ ENDPOINT }) {
 
     const [chats, setChats] = useState([])
     useEffect(() => {
+        console.log("ENDPOINT: ", ENDPOINT);
         const callGetMessages = async () => {
             const data = await getMessages(ENDPOINT)
             setChats(data)
         }
         callGetMessages()
-    }, [])
+    }, [ENDPOINT])
 
 
     return (

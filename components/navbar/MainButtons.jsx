@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
 import { useEffect, useState } from "react"
 import Home from "../../public/svgs/home.svg"
 import Jobs from "../../public/svgs/jobs.svg"
@@ -7,11 +8,10 @@ import Msg from "../../public/svgs/msg.svg"
 import Network from "../../public/svgs/network.svg"
 import Notif from "../../public/svgs/notif.svg"
 import Dots from "../../public/svgs/dots.svg"
-import Circle from "../../public/svgs/circle.svg"
 import InactiveHome from "../../public/svgs/in-home.svg"
 import ActiveJobs from "../../public/svgs/jobs-active.svg"
 import ActiveMessage from "../../public/svgs/message-active.svg"
-
+import myDp from "../../public/images/dp.jpg"
 
 
 
@@ -19,10 +19,11 @@ const defaultState = { home: false, network: false, jobs: false, messages: false
 
 function MainButtons() {
     const page = window.location.href.split("/")[3]
+    console.log("PAGE: ", page);
     const [currentPage, setCurrentPage] = useState(page ? page : "home")
-    // WIll use for cleaner code
+    // WIll use for cleaner codemessaging
     const [valHelpers, setValHelpers] = useState(defaultState)
-    const { home, network, jobs, messaging, notifications } = valHelpers
+    const { home, network, jobs, messages, notifications } = valHelpers
 
     useEffect(() => {
         setValHelpers({ ...defaultState, [currentPage]: true })
@@ -55,11 +56,11 @@ function MainButtons() {
                 </div>
             </Link>
 
-            <Link href={"/messages"} onClick={() => { setCurrentPage("messaging") }}>
+            <Link href={"/messages"} onClick={() => { setCurrentPage("messages") }}>
                 <div className="nav-btn">
-                    {messaging ? <ActiveMessage className="nav-btn-icn" /> : <Msg className="nav-btn-icn" />}
+                    {messages ? <ActiveMessage className="nav-btn-icn" /> : <Msg className="nav-btn-icn" />}
                     <p>Messaging</p>
-                    <span className={`nav-target-icn ${messaging && "nav-active"}`}></span>
+                    <span className={`nav-target-icn ${messages && "nav-active"}`}></span>
                 </div>
             </Link>
 
@@ -71,21 +72,17 @@ function MainButtons() {
                 </div>
             </Link>
 
-            <Link href={`/${currentPage}`}>
-                <div className="nav-btn" style={{ borderRight: "1px solid rgba(0, 0, 0, 0.1)" }}>
-                    <Circle className="nav-btn-icn" style={{ width: "24px", marginBottom: "2px" }} />
-                    <p>Me</p>
-                    <span className={`nav-target-icn `}></span>
-                </div>
-            </Link>
+            <div className="nav-btn" style={{ borderRight: "1px solid rgba(0, 0, 0, 0.1)" }}>
+                <Image src={myDp} alt="" className="nav-btn-icn" />
+                <p>Me</p>
+                <span className={`nav-target-icn `}></span>
+            </div>
 
-            <Link href={`/${currentPage}`}>
-                <div className="nav-btn">
-                    <Dots className="nav-btn-icn" />
-                    <p>Work</p>
-                    <span className={`nav-target-icn `}></span>
-                </div>
-            </Link>
+            <div className="nav-btn">
+                <Dots className="nav-btn-icn" />
+                <p>Work</p>
+                <span className={`nav-target-icn `}></span>
+            </div>
 
 
 

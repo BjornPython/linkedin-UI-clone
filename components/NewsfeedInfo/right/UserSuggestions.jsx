@@ -23,7 +23,7 @@ function UserSuggestions({ ENDPOINT }) {
             {Object.entries(userSuggestions).map((userId) => {
                 const { name, bio, dpURL } = userSuggestions[userId[0]]
                 return (
-                    <div className="user-suggestion">
+                    <div key={`sg-${name}`} className="user-suggestion">
                         <img src={dpURL} alt="" className="user-sg-icn" />
                         <div className="user-name-bio-follow">
                             <p className="name-sg">{name}</p>

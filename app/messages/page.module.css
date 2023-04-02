@@ -336,3 +336,24 @@
         width: 95%;
     }
 }
+
+@media (max-width:1160px) {
+    .messageAd {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .messageContainer {
+        flex-direction: column;
+    }
+    .chatsContainer {
+        border-top-right-radius: 0.8rem;
+        width: 500px;
+    }
+
+    .userChatContainer {
+        display: none;
+    }
+}
+    

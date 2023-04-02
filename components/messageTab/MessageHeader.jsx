@@ -1,9 +1,12 @@
 "use client"
 import { useRef } from "react"
-import Circle from "../../public/svgs/circle.svg"
+import Image from "next/image"
 import Dots from "../../public/svgs/dotss.svg"
 import Down from "../../public/svgs/down.svg"
 import New from "../../public/svgs/new.svg"
+import myDp from "../../public/images/dp.jpg"
+
+
 function MessageHeader({ expand, changeExpand }) {
 
     const tab = useRef(null)
@@ -17,7 +20,7 @@ function MessageHeader({ expand, changeExpand }) {
 
     return (
         <div ref={tab} className="message-head" onClick={(e) => { handleMsgTabClick(e) }}>
-            <Circle className="msg-circle-icn" onClick={() => changeExpand(!expand)} />
+            <Image src={myDp} className="msg-circle-icn" onClick={() => changeExpand(!expand)} />
             <p onClick={() => changeExpand(!expand)}>Messaging</p>
             <div className="messaging-icons">
                 <div className="msg-tab-icn">

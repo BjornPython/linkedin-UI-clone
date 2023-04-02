@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 import Home from "../../public/svgs/home.svg"
 import Jobs from "../../public/svgs/jobs.svg"
@@ -18,9 +19,11 @@ import myDp from "../../public/images/dp.jpg"
 const defaultState = { home: false, network: false, jobs: false, messages: false, notifications: false }
 
 function MainButtons() {
-    const page = window.location.href.split("/")[3]
-    console.log("PAGE: ", page);
-    const [currentPage, setCurrentPage] = useState(page ? page : "home")
+    // const page = window.location.href.split("/")[3]
+    // console.log("PAGE: ", page);
+    const path = usePathname()
+    console.log("PATH: ", path);
+    const [currentPage, setCurrentPage] = useState(path === "/" ? "home" : path.split("/")[1])
     // WIll use for cleaner codemessaging
     const [valHelpers, setValHelpers] = useState(defaultState)
     const { home, network, jobs, messages, notifications } = valHelpers
@@ -28,6 +31,8 @@ function MainButtons() {
     useEffect(() => {
         setValHelpers({ ...defaultState, [currentPage]: true })
     }, [currentPage])
+
+
 
     return (
         <div className="main-btns">

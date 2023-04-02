@@ -138,7 +138,9 @@
 .chatMessages {
     width: 100%;
     height: 416px;
-
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .chatMessageInputContainer {
@@ -217,6 +219,117 @@
     transform: scale(1.5);
 }
 
+.displayChatUser {
+    width: 100%;
+    height: 125px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chatDpSample {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.chatUserInfo {
+    margin-left: 15px;
+}
+
+.chatUserInfo p:nth-child(1) {
+    font-weight: bold;
+}
+
+.chatUserInfo p:nth-child(2) {
+    font-size: 14px;
+    margin-top: 3px;
+    color: rgba(0, 0, 0, 0.6);
+} 
+
+.allMessageContents {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+}
+
+.borderTop {
+    display: flex;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.borderTop hr {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.borderTop p {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+
+.chatMessage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.chatMessageDp {
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.imageName {
+    margin-left: 10px;
+    display: flex;
+    column-gap: 10px;
+    height: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.imageName p {
+    margin-top: 5px;
+}
+
+
+.imageName p:hover {
+    color: rgba(10, 102, 194, 0.8);
+    text-decoration: underline;
+}
+
+.messageText {
+    margin-top: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.messageText:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.messageText p {
+    margin-top: 10px;
+    width: 75%;
+    margin-left: 60px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
 
 @media (max-width: 1300px) {
     .messageContent {

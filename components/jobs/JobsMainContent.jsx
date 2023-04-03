@@ -1,5 +1,6 @@
 import Job from "./Job"
 import RecommendedJob from "./RecommendedJob"
+import styles from "../../app/jobs/page.module.css"
 
 const getJobs = async () => {
     const res = await fetch(`${process.env.API_ENDPOINT}/jobs/`, { cache: "no-cache" })
@@ -7,7 +8,7 @@ const getJobs = async () => {
     return data
 }
 
-async function JobsMainContent({ styles }) {
+async function JobsMainContent() {
     const jobs = await getJobs()
     console.log("JOBS: ", jobs);
     const RecommendedJobs = ["job4", "job5", "job6"]

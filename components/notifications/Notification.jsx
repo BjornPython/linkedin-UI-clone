@@ -1,6 +1,8 @@
 import React from 'react'
 import Dots from "../../public/svgs/dotss.svg"
-function Notification({ notif, styles }) {
+import styles from "../../app/notifications/page.module.css"
+
+function Notification({ notif }) {
     return (
         <div className={styles.notificationContainer}>
             <img src={notif.imageURL} alt="" className={styles.notifImage} />

@@ -2,7 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Ad from "../../public/images/ad.png"
 import "../NewsfeedInfo/newsfeedInfo.css"
-function RightAd({ styles }) {
+import styles from "../../app/notifications/page.module.css"
+
+function RightAd() {
     return (
         <div className={styles.rightContainer}>
             <div className={styles.rightAd}>

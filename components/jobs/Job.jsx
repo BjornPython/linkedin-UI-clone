@@ -1,6 +1,6 @@
 import React from 'react'
-
-function Job({ info, styles }) {
+import styles from "../../app/jobs/page.module.css"
+function Job({ info }) {
     const { title, location } = info
     return (
         <div className={styles.jobs}>

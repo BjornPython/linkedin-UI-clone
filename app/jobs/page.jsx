@@ -6,9 +6,9 @@ function page() {
     return (
         <div className={styles.jobPage}>
             <div className={styles.jobContents}>
-                <JobsLeftBanner styles={styles} />
-                <JobsMainContent styles={styles} />
-                <RightBanner styles={styles} />
+                <JobsLeftBanner />
+                <JobsMainContent />
+                <RightBanner />
             </div>
         </div>
     )

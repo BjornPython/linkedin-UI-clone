@@ -4,7 +4,9 @@ import MessageSearch from '../messageTab/MessageSearch'
 import MessageContents from '../messageTab/MessageContents'
 import Dots from "../../public/svgs/dotss.svg"
 import New from "../../public/svgs/new.svg"
-function Chats({ styles }) {
+import styles from "../../app/messages/page.module.css"
+
+function Chats() {
     return (
         <div className={styles.chatsContainer}>
             <div className={styles.messageHeader}>

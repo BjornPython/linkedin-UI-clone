@@ -1,7 +1,8 @@
 import Image from "next/image"
 import resSample from "../../public/gif/resSample.gif"
+import styles from "../../app/jobs/page.module.css"
 
-function RightBannerInfo({ styles }) {
+function RightBannerInfo() {
     return (
         <div className={styles.rightBannerInfo}>
             <div className={styles.infoContent}>

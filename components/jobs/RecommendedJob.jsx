@@ -1,7 +1,8 @@
 import Save from "../../public/svgs/emptySave.svg"
 import Seen from "../../public/svgs/seen.svg"
+import styles from "../../app/jobs/page.module.css"
 
-function RecommendedJob({ info, styles }) {
+function RecommendedJob({ info }) {
     return (
         <div className={styles.recommendJobs}>
             <img src={info.DpURL} alt="" className={styles.sampleURL} />

@@ -2,13 +2,16 @@ import ChatHeader from "./ChatHeader"
 import ChatMessages from "./ChatMessages"
 import ChatMessageInput from "./ChatMessageInput"
 import ChatActions from "./ChatActions"
-function UserChat({ styles }) {
+import styles from "../../app/messages/page.module.css"
+
+
+function UserChat() {
     return (
         <div className={styles.userChatContainer}>
-            <ChatHeader styles={styles} />
-            <ChatMessages styles={styles} />
-            <ChatMessageInput styles={styles} />
-            <ChatActions styles={styles} />
+            <ChatHeader />
+            <ChatMessages />
+            <ChatMessageInput />
+            <ChatActions />
         </div>
     )
 }

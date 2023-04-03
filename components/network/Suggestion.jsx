@@ -1,8 +1,9 @@
 import Image from "next/image"
 import banner from "../../public/images/banner.png"
 import Circle from "../../public/svgs/circle.svg"
+import styles from "../../app/network/page.module.css"
 
-function Suggestion({ userInfo, styles }) {
+function Suggestion({ userInfo }) {
 
     const { name, bio, dpURL, bannerURL } = userInfo
 

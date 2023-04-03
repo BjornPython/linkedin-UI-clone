@@ -1,6 +1,9 @@
 import React from 'react'
 import Suggestions from './Suggestions'
-function MainContents({ styles }) {
+import styles from "../../app/network/page.module.css"
+
+
+function MainContents() {
     return (
         <div className={styles.contentContainer}>
             <div className={styles.contentOne}>

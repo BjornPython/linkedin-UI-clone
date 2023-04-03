@@ -5,8 +5,9 @@ import Setting from "../../public/svgs/setting.svg"
 import Yt from "../../public/svgs/yt.svg"
 import Check from "../../public/svgs/check.svg"
 import Notif from "../../public/svgs/notif.svg"
+import styles from "../../app/jobs/page.module.css"
 
-function jobsLeftBanner({ styles }) {
+function jobsLeftBanner() {
     return (
         <div className={styles.leftBanner}>
             <div className={styles.leftBannerContent}>

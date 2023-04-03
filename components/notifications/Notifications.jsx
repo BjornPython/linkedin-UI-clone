@@ -1,6 +1,7 @@
 import Notification from "./Notification"
+import styles from "../../app/notifications/page.module.css"
 
-function Notifications({ notifs, styles }) {
+function Notifications({ notifs }) {
     return (
         <div className={styles.notifsContainer}>
             {notifs.map((notif, index) => {

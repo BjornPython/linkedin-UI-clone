@@ -2,7 +2,10 @@ import React from 'react'
 import MessageAd from './MessageAd'
 import Chats from './Chats'
 import UserChat from './UserChat'
-function MessageContent({ styles }) {
+import styles from "../../app/messages/page.module.css"
+
+
+function MessageContent() {
     return (
         <div className={styles.messageContent}>
 

@@ -8,8 +8,8 @@ function page() {
     return (
         <div className={styles.networkPage}>
             <div className={styles.networkContents}>
-                <LeftBanner styles={styles} />
-                <MainContents styles={styles} />
+                <LeftBanner />
+                <MainContents />
             </div>
         </div>
     )

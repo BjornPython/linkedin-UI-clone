@@ -1,8 +1,8 @@
 import Image from "next/image"
 import ad from "../../public/images/ad.png"
+import styles from "../../app/network/page.module.css"
 
-
-function LeftAd({ styles }) {
+function LeftAd() {
     return (
         <div className={styles.adContainer}>
             <Image src={ad} alt="" className={styles.adImage} />

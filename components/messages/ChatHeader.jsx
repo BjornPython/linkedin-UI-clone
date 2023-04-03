@@ -2,7 +2,9 @@ import React from 'react'
 import Dots from "../../public/svgs/dotss.svg"
 import Call from "../../public/svgs/call.svg"
 import Star from "../../public/svgs/star.svg"
-function ChatHeader({ styles }) {
+import styles from "../../app/messages/page.module.css"
+
+function ChatHeader() {
     return (
         <div className={styles.chatHeader}>
             <div className={styles.nameStatus}>

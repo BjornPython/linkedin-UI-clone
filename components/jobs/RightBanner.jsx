@@ -1,7 +1,8 @@
 import RightBannerInfo from "./RightBannerInfo"
 import "../NewsfeedInfo/newsfeedInfo.css"
+import styles from "../../app/jobs/page.module.css"
 
-function RightBanner({ styles }) {
+function RightBanner() {
     return (
         <div className={styles.rightBanner}>
             <RightBannerInfo styles={styles} />

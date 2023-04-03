@@ -3,8 +3,9 @@ import Gif from "../../public/svgs/gif.svg"
 import Clip from "../../public/svgs/clip.svg"
 import Emoji from "../../public/svgs/emoji.svg"
 import Dots from "../../public/svgs/dotss.svg"
+import styles from "../../app/messages/page.module.css"
 
-function ChatActions({ styles }) {
+function ChatActions() {
     return (
         <div className={styles.chatActions}>
             <div className={styles.chatActionIcns}>

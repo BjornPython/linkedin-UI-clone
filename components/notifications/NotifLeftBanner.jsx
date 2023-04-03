@@ -1,6 +1,7 @@
 import React from 'react'
+import styles from "../../app/notifications/page.module.css"
 
-function NotifLeftBanner({ styles }) {
+function NotifLeftBanner() {
     return (
         <div className={styles.leftContainer}>
 

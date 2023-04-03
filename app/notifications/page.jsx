@@ -3,6 +3,9 @@ import styles from "./page.module.css"
 import Notifications from '../../components/notifications/Notifications'
 import NotifLeftBanner from '@/components/notifications/NotifLeftBanner'
 import RightAd from '@/components/notifications/RightAd'
+
+
+
 const getNotifs = async () => {
     const res = await fetch(`${process.env.API_ENDPOINT}/notifs`, { cache: "no-cache" })
     const data = await res.json()
@@ -16,9 +19,9 @@ async function page() {
     return (
         <div className={styles.notifsPage}>
             <div className={styles.notifsContents}>
-                <NotifLeftBanner styles={styles} />
-                <Notifications styles={styles} notifs={notifs} />
-                <RightAd styles={styles} />
+                <NotifLeftBanner />
+                <Notifications notifs={notifs} />
+                <RightAd />
             </div>
         </div>
     )

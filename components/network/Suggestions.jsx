@@ -1,5 +1,6 @@
 import React from 'react'
 import Suggestion from './Suggestion'
+import styles from "../../app/network/page.module.css"
 
 const getUsers = async () => {
     try {
@@ -9,7 +10,7 @@ const getUsers = async () => {
     } catch (err) { throw err }
 }
 
-async function Suggestions({ styles }) {
+async function Suggestions() {
 
     const userSuggestions = await getUsers()
 

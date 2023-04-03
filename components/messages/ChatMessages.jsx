@@ -1,6 +1,9 @@
 import Image from "next/image"
 import sampleChatDp from "../../public/images/user2.jpg"
 import myDp from "../../public/images/dp.jpg"
+import styles from "../../app/messages/page.module.css"
+
+
 const sampleConvo = [
     {
         sender: "Maximo Guzman",
@@ -37,7 +40,7 @@ const sampleConvo = [
 
 
 
-const displayMessage = (styles, info) => {
+const displayMessage = (info) => {
     const { sender, message, dp } = info
     return (
         <div className={styles.chatMessage}>
@@ -55,7 +58,7 @@ const displayMessage = (styles, info) => {
 
 
 
-function ChatMessages({ styles }) {
+function ChatMessages() {
     return (
         <div className={styles.chatMessages}>
             <div className={styles.displayChatUser}>
@@ -76,7 +79,7 @@ function ChatMessages({ styles }) {
                 </div>
 
                 {sampleConvo.map(message => {
-                    return displayMessage(styles, message)
+                    return displayMessage(message)
                 })}
 
             </div>

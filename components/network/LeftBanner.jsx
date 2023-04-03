@@ -6,8 +6,9 @@ import Hashtag from "../../public/svgs/hashtag.svg"
 import Contacts from "../../public/svgs/contacts.svg"
 import Following from "../../public/svgs/following.svg"
 import LeftAd from "./LeftAd"
+import styles from "../../app/network/page.module.css"
 
-function LeftBanner({ styles }) {
+function LeftBanner() {
     return (
         <div className={styles.leftBanner}>
             <p className={styles.mngNetwork}>Manage my Network</p>
